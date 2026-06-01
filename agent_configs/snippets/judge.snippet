@@ -1,0 +1,9 @@
+# ── VLM Judge credentials & endpoints ──
+# Fill in the API key and base URL for the LLM the judge calls.
+# Any field in a --judge spec can reference these via @VAR_NAME.
+ENV ANTHROPIC_API_KEY="<your-judge-anthropic-api-key>"
+ENV ANTHROPIC_BASE_URL="<https://your-anthropic-compatible-endpoint>"
+
+# When the judge runs via an openai-compatible provider, also set:
+# ENV OPENAI_API_KEY="<your-judge-openai-api-key>"
+# ENV OPENAI_BASE_URL="<https://your-openai-compatible-endpoint>"

@@ -1,0 +1,56 @@
+{
+  "application": "ppt-generation",
+  "case_id": "case-openrouter-stats",
+  "language": "zh-CN",
+
+  "deck": {
+    "aspect_ratio": "16:9",
+    "slide_count": 7,
+    "audience": "大模型从业者（研发、产品、投资）",
+    "tone": "data-forward, engaging, professional"
+  },
+
+  "brief": {
+    "title": "2025 大模型使用格局：来自 OpenRouter 的真实数据",
+    "one_liner": "基于 OpenRouter 数百万用户的真实使用数据，揭示当前大模型市场的竞争格局和趋势变化。",
+    "goal": "让听众了解哪些模型在真实使用中最受欢迎、市场份额如何分布、哪些新势力正在崛起，并据此判断行业趋势。"
+  },
+
+  "slides": [
+    {
+      "id": "title",
+      "title": "2025 大模型使用格局：来自 OpenRouter 的真实数据",
+      "objective": "封面页，展示数据来源（OpenRouter Rankings，2025年3月最新一周数据）和核心数字：本周总 token 处理量达 26T+。"
+    },
+    {
+      "id": "top-models",
+      "title": "本周 Top 10 模型排行",
+      "objective": "用表格或柱状图展示本周最受欢迎的 10 个模型，包括模型名、厂商、token 使用量和周环比变化。突出小米 MiMo-V2-Pro 以 3.96T tokens 登顶。"
+    },
+    {
+      "id": "market-share",
+      "title": "厂商市场份额分布",
+      "objective": "用饼图或柱状图展示按厂商统计的 token 份额。小米 25.9% 领先，Google 11.8%，Anthropic 11.0%，MiniMax 8.5%，OpenAI 7.9%。强调中国厂商的崛起。"
+    },
+    {
+      "id": "trends",
+      "title": "市场格局变化趋势",
+      "objective": "说明过去一年的变化：(1) 中国模型（小米、Stepfun、DeepSeek、智谱）份额快速增长；(2) Anthropic 从统治地位被分散；(3) 开源模型成为主力。对比一年前 vs 现在的格局。"
+    },
+    {
+      "id": "rising-stars",
+      "title": "本周新星：增长最快的模型",
+      "objective": "展示增长最快的模型：MiniMax M2.7（+253%）、小米 MiMo-V2-Pro（+165%）、Cline（+128%）。分析背后的驱动力。"
+    },
+    {
+      "id": "app-ecosystem",
+      "title": "应用生态：谁在调用这些模型",
+      "objective": "展示 Top 应用排行：OpenClaw（829B tokens/天）、Kilo Code、Claude Code、Cline。分析 AI 编程助手成为最大使用场景的趋势。"
+    },
+    {
+      "id": "takeaways",
+      "title": "关键洞察与行业启示",
+      "objective": "总结 3-4 个核心观点：(1) 中国模型在全球市场已占主导地位；(2) AI Coding Agent 是当前最大的 LLM 消费场景；(3) 模型市场高度分散化，没有绝对赢家；(4) 便宜+快速的模型（Flash/Turbo 系列）使用量远超旗舰模型。"
+    }
+  ]
+}

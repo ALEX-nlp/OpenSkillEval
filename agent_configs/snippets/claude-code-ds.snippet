@@ -1,0 +1,7 @@
+# ── claude-code-ds agent (DeepSeek's Anthropic-compatible API) ──
+# EDIT ME: fill in your DeepSeek API key.
+# The model name is injected by `harbor run --model <X>` at runtime; the
+# claude_code adapter then mirrors ANTHROPIC_MODEL to all DEFAULT_*_MODEL
+# aliases (see harbor claude_code.py:1094-1098), so we don't pin them here.
+ENV ANTHROPIC_BASE_URL=https://api.deepseek.com/anthropic \
+    ANTHROPIC_AUTH_TOKEN=<your-deepseek-api-key>

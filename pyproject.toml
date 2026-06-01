@@ -1,0 +1,24 @@
+[project]
+name = "open-skill-eval"
+version = "0.1.0"
+description = "OpenSkillEval - Agent benchmark evaluation framework"
+requires-python = ">=3.12"
+dependencies = [
+    # harbor benchmark runner
+    "harbor>=0.6.6",
+
+    # LLM SDKs (used by eval VLM judges + agent integrations)
+    "anthropic>=0.95.0",
+    "openai>=2.32.0",
+
+    # Shared utilities
+    "pillow>=12.2.0",
+    "requests>=2.31.0",
+    "tqdm>=4.60.0",
+    "urllib3>=2.0.0",
+
+    # Format-specific (PDF / PPTX / browser screenshots)
+    "pymupdf>=1.25.0",
+    "python-pptx>=1.0.2",
+    "playwright>=1.58.0",
+]

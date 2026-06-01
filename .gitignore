@@ -1,0 +1,37 @@
+# Python
+**/__pycache__/
+*.py[cod]
+.DS_Store
+**/.playwright-browsers/
+
+# uv venvs / Python project artifacts
+.venv/
+*.egg-info/
+
+# Runtime outputs (per project-root)
+jobs/
+smoke_jobs/
+logs/
+tmp/
+
+# entries/ — runtime entry files (e.g. python-<ts>.txt from the Web UI) are noise,
+# but the 5 hand-curated full-matrix files are tracked.
+entries/*
+!entries/data-visualization.txt
+!entries/poster-generation.txt
+!entries/ppt-generation.txt
+!entries/report-generation.txt
+!entries/web-design.txt
+
+# eval pipeline outputs (each family writes here; runtime artifacts only)
+eval/*/output/
+
+# Case data — hosted on HuggingFace as a separate dataset.
+# Users run `python scripts/download_cases.py` to populate these dirs locally.
+tasks/*/shared/cases/
+
+# Editor
+**/.vscode/
+
+# Local analysis files
+*.xlsx

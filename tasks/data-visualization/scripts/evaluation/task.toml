@@ -1,0 +1,29 @@
+version = "1.0"
+
+[metadata]
+author_name = "OpenSkillEval"
+author_email = "noreply@example.com"
+difficulty = "medium"
+category = "Evaluation"
+tags = ["data-visualization", "evaluation", "data-accuracy", "trajectory-analysis"]
+
+[verifier]
+timeout_sec = 600.0
+
+[agent]
+timeout_sec = 900.0
+
+[environment]
+build_timeout_sec = 1800.0
+cpus = 2
+memory_mb = 8192
+storage_mb = 20480
+gpus = 0
+allow_internet = true
+
+
+[verifier.env]
+OPENSKILLEVAL_APP_ROOT = "/app"
+
+[solution.env]
+OPENSKILLEVAL_APP_ROOT = "/app"
